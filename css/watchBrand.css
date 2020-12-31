@@ -1,0 +1,286 @@
+/* 
+====================================
+Brand Page
+====================================
+*/
+
+.logo__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 77px 0 35px;
+    margin: auto;
+    width: 90%;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+/* 
+====================================
+Padding for Patek logo
+====================================
+*/
+
+.logo__title.patek {
+    padding: 147px 0 90px;
+}
+
+/* 
+====================================
+Padding for Audemars logo
+====================================
+*/
+
+.logo__title.ap {
+    padding: 197px 0 100px;
+}
+
+/* 
+====================================
+Padding for Omega logo
+====================================
+*/
+
+.logo__title.omega {
+    padding: 167px 0 100px;
+}
+
+/* 
+====================================
+Title image for Audemars
+====================================
+*/
+
+.logo__title.ap img {
+    width: 340px;
+}
+
+/* 
+====================================
+Title image for Omega
+====================================
+*/
+
+.logo__title.omega img {
+    width: 240px;
+}
+
+/* 
+====================================
+Default logo width
+====================================
+*/
+
+.logo__title img {
+    width: 280px;
+}
+
+.watch__img__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+    grid-gap: 10px;
+
+    padding: 60px 0;
+}
+
+.watch__list__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    color: #000;
+    background: #fff;
+    min-width: 162px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.watch__list__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 315px;
+    overflow: hidden;
+}
+
+.watch__list__img img {
+    width: 90%;
+    object-fit: cover;
+    transition: .2s ease-in-out;
+}
+
+.watch__item__desc {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    
+    transform: translateY(45px);
+    transition: .2s ease-in-out;
+}
+
+.watch__list__item:hover .watch__item__desc {
+    transform: translateY(0);
+}
+
+.watch__item__style,
+.watch__item__type,
+.watch__item__price {
+    padding-bottom: 10px;
+}
+
+.watch__item__style {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.watch__item__type {
+    color: rgb(100, 100, 100);
+}
+
+.watch__item__cta {
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: .2s ease-in-out;
+}
+
+/* 
+====================================
+Media Queries
+====================================
+*/
+
+@media (max-width: 672px) {
+
+    .watch__img__list {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        margin: 6px 0;
+    }
+
+}
+
+@media (max-width: 527px) {
+
+    .watch__img__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .watch__img__list a {
+        flex: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .watch__list__img img {
+        width: 100%;
+    }
+
+    .watch__item__style,
+    .watch__item__type,
+    .watch__item__price {
+        padding-bottom: 8px;
+    }
+
+    .watch__item__style {
+        font-size: 16px;
+    }
+
+    .watch__item__type,
+    .watch__item__price {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 499px) {
+
+    .logo__title {
+        padding: 57px 0 10px;
+        margin: auto;
+        width: 90%;
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    /* 
+    ====================================
+    Padding Patek logo mobile
+    ====================================
+    */
+
+    .logo__title.patek {
+        padding: 107px 0 65px;
+    }
+
+    /* 
+    ====================================
+    Padding for Audemars logo mobile
+    ====================================
+    */
+
+    .logo__title.ap {
+        padding: 147px 0 75px;
+    }
+
+    /* 
+    ====================================
+    Padding for Omega logo
+    ====================================
+    */
+
+    .logo__title.omega {
+        padding: 117px 0 75px;
+    }
+
+    /* 
+    ====================================
+    Default image size for mobile
+    ====================================
+    */
+    
+    .logo__title img {
+        width: 200px;
+    }
+
+    /* 
+    ====================================
+    Image size for Audemars log on mobile
+    ====================================
+    */
+
+    .logo__title.ap img {
+        width: 260px;
+    }
+
+    /* 
+    ====================================
+    Image size for Omega logo on mobile
+    ====================================
+    */
+
+    .logo__title.omega img {
+        width: 140px;
+    }
+
+    .watch__item__desc {
+        padding: 10px 30px 10px 10px;
+        transform: translateY(0);
+    }
+
+    .watch__item__cta {
+        display: none;
+    }
+
+}

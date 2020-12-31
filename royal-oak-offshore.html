@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montre | Royal Oak Offshore</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/watchSelected.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <div class="nav__box">
+
+            <div class="nav__left">
+                <h2 class="logo"><a href="index.html">Montre</a></h2>
+            </div>
+
+            <div class="nav__right">
+
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="index.html">home</a></li>
+                    <li class="nav__item active dropdown"><a href="watches.html">watches</a>
+
+                         <!-- Watch brand dropdown menu -->
+                        <div class="watches">
+                            <a href="rolex.html" class="watch">Rolex</a>
+                            <a href="patek.html" class="watch">Patek Philippe</a>
+                            <a href="ap.html" class="watch">Audemars Piguet</a>
+                            <a href="omega.html" class="watch">Omega</a>
+                        </div>
+
+                    </li>
+                    <li class="nav__item"><a href="gallery.html">gallery</a></li>
+                </ul>
+
+                <!-- Nav cart link -->
+                <div class="nav__cart">
+                    <div class="nav__cart__wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+                <!-- Burger Menu link -->
+                <div class="burger__menu">
+
+                    <div class="lines">
+                        <div class="top line"></div>
+                        <div class="middle line"></div>
+                        <div class="bottom line"></div>
+                    </div>
+
+                </div>
+
+                <!-- Blurred background for open burger menu -->
+                <div class="blurred__bg">
+                </div>
+
+                <!-- Burger nav list container -->
+                <div class="burger__nav">
+
+                    <!-- Top half of burger nav menu -->
+                    <div class="burger__nav__top">
+
+                        <div class="burger__nav__list">
+                            <a href="index.html" class="burger__nav__item">home<i class="fas fa-chevron-right"></i></a>
+                            <a href="watches.html" class="burger__nav__item">watches<i class="fas fa-chevron-right"></i></a>
+                            <a href="gallery.html" class="burger__nav__item">gallery<i class="fas fa-chevron-right"></i></a>
+                            <div class="burger__nav__cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="burger__watch__list">
+                            <a href="rolex.html" class="burger__watch__item">Rolex</a>
+                            <a href="patek.html" class="burger__watch__item">Patek Philippe</a>
+                            <a href="ap.html" class="burger__watch__item">Audemars Piguet</a>
+                            <a href="omega.html" class="burger__watch__item">Omega</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom half of burger nav -->
+                    <div class="burger__nav__bottom">
+                        <a href="submariner.html" class="burger__sub__cta">Submariner</a>
+                        <a href="nautilus.html" class="burger__naut__cta">Nautilus</a>
+                        <a href="index.html" class="burger__logo">Montre</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- Logo for watch brand -->
+        <div class="watch__logo__title ap">
+            <img src="images/ap-logo.png" alt="Patek logo">
+        </div>
+
+        <!-- Selected watch carousel title and images -->
+        <div class="watch__selected">
+
+            <div class="slideshow-container">
+
+                <div class="image-container">
+                    <img class="image fade" src="images/audemars-piguet/royal-oak-offshore-bg.png" alt="Audemars Piguet Royal Oak Offshore">
+                </div>
+                <div class="image-container">
+                    <img class="image fade" src="images/audemars-piguet/royal-oak-offshore-side.png" alt="Audemars Piguet Royal Oak Offshore">
+                </div>
+                <div class="image-container">
+                    <img class="image fade" src="images/audemars-piguet/royal-oak-offshore-bracelet.png" alt="Audemars Piguet Royal Oak Offshore">
+                </div>
+
+                <i class="fas fa-chevron-left prev" onclick="newSlide(-1)"></i>
+                <i class="fas fa-chevron-right next" onclick="newSlide(1)"></i>
+
+            </div>
+
+            <div class="watch__selected__desc">
+                <p class="watch__desc__title">Royal Oak Offshore</p>
+                <p class="watch__desc__style">Ceramic Titanium 44mm</p>
+                <p class="watch__desc__price">$149,950</p>
+                <p class="watch__desc__cta" data-id="offshore">Add to Cart</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="footer__wrapper">
+
+                <!-- Footer section for website links -->
+                <div class="footer__nav">
+
+                    <!-- Footer brand links -->
+                    <div class="footer__column">
+
+                        <div class="footer__head">
+                            <h4>brands</h4>
+                        </div>
+
+                        <ul class="footer__list">
+                            <li class="footer__list__item"><a href="rolex.html">Rolex</a></li>
+                            <li class="footer__list__item"><a href="patek.html">Patek Philippe</a></li>
+                            <li class="footer__list__item"><a href="ap.html">Audemars Piguet</a></li>
+                            <li class="footer__list__item"><a href="omega.html">Omega</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Footer top picks links -->
+                    <div class="footer__column">
+
+                        <div class="footer__head">
+                            <h4>top picks</h4>
+                        </div>
+
+                        <ul class="footer__list">
+                            <li class="footer__list__item"><a href="submariner.html">Submariner</a></li>
+                            <li class="footer__list__item"><a href="gmt-master.html">GMT Master II</a></li>
+                            <li class="footer__list__item"><a href="day-date.html">Day-Date</a></li>
+                            <li class="footer__list__item"><a href="nautilus.html">Nautilus</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Footer website nav links -->
+                    <div class="footer__column">
+
+                        <div class="footer__head">
+                            <h4>guide</h4>
+                        </div>
+
+                        <ul class="footer__list">
+                            <li class="footer__list__item"><a href="index.html">Home</a></li>
+                            <li class="footer__list__item"><a href="watches.html">Watches</a></li>
+                            <li class="footer__list__item"><a href="gallery.html">Gallery</a></li>
+                        </ul>
+
+                    </div>
+
+                </div> 
+
+                <!-- Footer social media links -->
+                <div class="footer__social">
+
+                    <div class="footer__social__icons">
+
+                        <a href="#" class="footer__icon">
+                            <div class="footer__icon__bg">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+
+                        <a href="#" class="footer__icon">
+                            <div class="footer__icon__bg">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+
+                        <a href="#" class="footer__icon">
+                            <div class="footer__icon__bg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+
+                        <a href="#" class="footer__icon">
+                            <div class="footer__icon__bg">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer__cta">
+                <h2 class="footer__logo"><a href="index.html">Montre</a></h2>
+                <p class="footer__copyright">&copy; 2020 Montre inc, All Rights Reserved</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="cart__overlay">
+        </div>
+        <div class="cart">
+            <p class="cart__title">Your Cart</p>
+            <div class="cart__content">
+            </div>
+            <div class="cart__footer">
+                <h3>Your Total : $ <span class="cart__total">0</span></h3>
+                <button class="clear__cart">Clear Cart</button>
+                <button class="purchase">Purchase</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Lightbox Jquery -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+</html>
